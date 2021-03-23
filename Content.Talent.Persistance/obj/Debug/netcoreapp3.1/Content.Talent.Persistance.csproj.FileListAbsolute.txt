@@ -1,0 +1,8 @@
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Persistance\obj\Debug\netcoreapp3.1\Content.Talent.Persistance.csprojAssemblyReference.cache
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Persistance\obj\Debug\netcoreapp3.1\Content.Talent.Persistance.AssemblyInfoInputs.cache
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Persistance\obj\Debug\netcoreapp3.1\Content.Talent.Persistance.AssemblyInfo.cs
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Persistance\bin\Debug\netcoreapp3.1\Content.Talent.Persistance.deps.json
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Persistance\bin\Debug\netcoreapp3.1\Content.Talent.Persistance.dll
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Persistance\bin\Debug\netcoreapp3.1\Content.Talent.Persistance.pdb
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Persistance\obj\Debug\netcoreapp3.1\Content.Talent.Persistance.dll
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Persistance\obj\Debug\netcoreapp3.1\Content.Talent.Persistance.pdb

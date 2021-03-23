@@ -1,0 +1,8 @@
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Domain.Model\bin\Debug\netcoreapp3.1\Content.Talent.Domain.Model.deps.json
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Domain.Model\bin\Debug\netcoreapp3.1\Content.Talent.Domain.Model.dll
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Domain.Model\bin\Debug\netcoreapp3.1\Content.Talent.Domain.Model.pdb
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Domain.Model\obj\Debug\netcoreapp3.1\Content.Talent.Domain.Model.csprojAssemblyReference.cache
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Domain.Model\obj\Debug\netcoreapp3.1\Content.Talent.Domain.Model.AssemblyInfoInputs.cache
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Domain.Model\obj\Debug\netcoreapp3.1\Content.Talent.Domain.Model.AssemblyInfo.cs
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Domain.Model\obj\Debug\netcoreapp3.1\Content.Talent.Domain.Model.dll
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Domain.Model\obj\Debug\netcoreapp3.1\Content.Talent.Domain.Model.pdb

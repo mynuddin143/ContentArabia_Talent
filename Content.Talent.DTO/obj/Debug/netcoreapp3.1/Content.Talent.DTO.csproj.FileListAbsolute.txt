@@ -1,0 +1,8 @@
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.DTO\bin\Debug\netcoreapp3.1\Content.Talent.DTO.deps.json
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.DTO\bin\Debug\netcoreapp3.1\Content.Talent.DTO.dll
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.DTO\bin\Debug\netcoreapp3.1\Content.Talent.DTO.pdb
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.DTO\obj\Debug\netcoreapp3.1\Content.Talent.DTO.csprojAssemblyReference.cache
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.DTO\obj\Debug\netcoreapp3.1\Content.Talent.DTO.AssemblyInfoInputs.cache
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.DTO\obj\Debug\netcoreapp3.1\Content.Talent.DTO.AssemblyInfo.cs
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.DTO\obj\Debug\netcoreapp3.1\Content.Talent.DTO.dll
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.DTO\obj\Debug\netcoreapp3.1\Content.Talent.DTO.pdb
