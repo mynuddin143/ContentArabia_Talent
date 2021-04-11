@@ -10,11 +10,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.OpenApi" Version="1.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.2" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.1" />
     <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Content.Talent.DataAccess\Content.Talent.DataAccess.csproj" />
+    <ProjectReference Include="..\Content.Talent.Domain.Interface\Content.Talent.Domain.Interface.csproj" />
     <ProjectReference Include="..\Content.Talent.Domain.Model\Content.Talent.Domain.Model.csproj" />
     <ProjectReference Include="..\Content.Talent.Persistance\Content.Talent.Persistance.csproj" />
     <ProjectReference Include="..\Content.Talent.Util\Content.Talent.Util.csproj" />

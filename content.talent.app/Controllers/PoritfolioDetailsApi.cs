@@ -21,7 +21,7 @@ namespace IO.Swagger.Controllers
     /// 
     /// </summary>
     [ApiController]
-    public class PoritfolioDetailsApiController : ControllerBase, IPoritfolioDetailsApiController
+    public class PoritfolioDetailsApiController : ControllerBase
     { 
         /// <summary>
         /// Remove talaent project
@@ -70,14 +70,14 @@ namespace IO.Swagger.Controllers
         [Route("/talentProjectDetails/{talentId}")]
         [ValidateModelState]
         [SwaggerOperation("TalentProjectDetailsTalentIdGet")]
-        [SwaggerResponse(statusCode: 200, type: typeof(LoginResponse), description: "Success")]
+        [SwaggerResponse(statusCode: 200, type: typeof(ProjectDetails), description: "Success")]
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
         public virtual IActionResult TalentProjectDetailsTalentIdGet([FromRoute][Required]long? talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
-            // return StatusCode(200, default(LoginResponse));
+            // return StatusCode(200, default(ProjectDetails));
 
             //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400, default(Error));
@@ -91,11 +91,11 @@ namespace IO.Swagger.Controllers
             //TODO: Uncomment the next line to return response 405 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(405);
             string exampleJson = null;
-            exampleJson = "{\n  \"firstName\" : \"abc\",\n  \"lastName\" : \"xyz\",\n  \"role\" : \"admin\",\n  \"userImage\" : \"data:image/png;base64,iVBORwKGK5CYII=\",\n  \"displayName\" : \"abc xyz\",\n  \"userId\" : \"046b6c7f-0b8a-43b9-b35d-6489e6daee91\",\n  \"token\" : \"eyJhbGMDIyfQ.eyJzdWIiO.SflKx\"\n}";
+            exampleJson = "{\n  \"modifiedOn\" : \"23012021\",\n  \"stats\" : [ \"http://behance.vo.\", \"Product Design\" ],\n  \"name\" : \"jhon\",\n  \"publishedOn\" : \"23012021\",\n  \"matureContent\" : \"http://www.behance.net/gallery\",\n  \"owners\" : [ \"http://behance.vo.\", \"Product Design\" ],\n  \"id\" : 33423,\n  \"fields\" : [ \"Branding\", \"Product Design\" ],\n  \"createdOn\" : \"23012021\",\n  \"url\" : \"http://www.behance.net/gallery\",\n  \"covers\" : [ \"http://behance.vo.\", \"Product Design\" ]\n}";
             
                         var example = exampleJson != null
-                        ? JsonConvert.DeserializeObject<LoginResponse>(exampleJson)
-                        : default(LoginResponse);            //TODO: Change the data returned
+                        ? JsonConvert.DeserializeObject<ProjectDetails>(exampleJson)
+                        : default(ProjectDetails);            //TODO: Change the data returned
             return new ObjectResult(example);
         }
 
@@ -113,14 +113,14 @@ namespace IO.Swagger.Controllers
         [Route("/talentProjectDetails/{talentId}")]
         [ValidateModelState]
         [SwaggerOperation("TalentProjectDetailsTalentIdPut")]
-        [SwaggerResponse(statusCode: 200, type: typeof(LoginResponse), description: "Success")]
+        [SwaggerResponse(statusCode: 200, type: typeof(ProjectDetails), description: "Success")]
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
         public virtual IActionResult TalentProjectDetailsTalentIdPut([FromRoute][Required]long? talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
-            // return StatusCode(200, default(LoginResponse));
+            // return StatusCode(200, default(ProjectDetails));
 
             //TODO: Uncomment the next line to return response 400 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(400, default(Error));
@@ -134,11 +134,11 @@ namespace IO.Swagger.Controllers
             //TODO: Uncomment the next line to return response 405 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(405);
             string exampleJson = null;
-            exampleJson = "{\n  \"firstName\" : \"abc\",\n  \"lastName\" : \"xyz\",\n  \"role\" : \"admin\",\n  \"userImage\" : \"data:image/png;base64,iVBORwKGK5CYII=\",\n  \"displayName\" : \"abc xyz\",\n  \"userId\" : \"046b6c7f-0b8a-43b9-b35d-6489e6daee91\",\n  \"token\" : \"eyJhbGMDIyfQ.eyJzdWIiO.SflKx\"\n}";
+            exampleJson = "{\n  \"modifiedOn\" : \"23012021\",\n  \"stats\" : [ \"http://behance.vo.\", \"Product Design\" ],\n  \"name\" : \"jhon\",\n  \"publishedOn\" : \"23012021\",\n  \"matureContent\" : \"http://www.behance.net/gallery\",\n  \"owners\" : [ \"http://behance.vo.\", \"Product Design\" ],\n  \"id\" : 33423,\n  \"fields\" : [ \"Branding\", \"Product Design\" ],\n  \"createdOn\" : \"23012021\",\n  \"url\" : \"http://www.behance.net/gallery\",\n  \"covers\" : [ \"http://behance.vo.\", \"Product Design\" ]\n}";
             
                         var example = exampleJson != null
-                        ? JsonConvert.DeserializeObject<LoginResponse>(exampleJson)
-                        : default(LoginResponse);            //TODO: Change the data returned
+                        ? JsonConvert.DeserializeObject<ProjectDetails>(exampleJson)
+                        : default(ProjectDetails);            //TODO: Change the data returned
             return new ObjectResult(example);
         }
     }

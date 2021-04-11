@@ -1,11 +1,11 @@
-C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.csprojAssemblyReference.cache
-C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.AssemblyInfoInputs.cache
-C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.AssemblyInfo.cs
 C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\bin\Debug\netcoreapp3.1\Content.Talent.Util.deps.json
 C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\bin\Debug\netcoreapp3.1\Content.Talent.Util.dll
 C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\bin\Debug\netcoreapp3.1\Content.Talent.Util.pdb
 C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\bin\Debug\netcoreapp3.1\Content.Talent.Persistance.dll
 C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\bin\Debug\netcoreapp3.1\Content.Talent.Persistance.pdb
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.csprojAssemblyReference.cache
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.AssemblyInfoInputs.cache
+C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.AssemblyInfo.cs
 C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.csproj.CopyComplete
 C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.dll
 C:\Users\mynuddin_shaik\Documents\Personal\ContentArabia\content-talent\content.talent.app\Content.Talent.Util\obj\Debug\netcoreapp3.1\Content.Talent.Util.pdb
