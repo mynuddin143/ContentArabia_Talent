@@ -45,8 +45,8 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentBioDetailsTalentIdDelete([FromRoute][Required]long? talentId)
-        { 
+        public virtual IActionResult TalentBioDetailsTalentIdDelete([FromRoute][Required]string talentId)
+        {
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200);
 
@@ -59,7 +59,7 @@ namespace IO.Swagger.Controllers
             //TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(404, default(Error));
 
-            throw new NotImplementedException();
+            return new ObjectResult(_iBioDetailsApiController.TalentBioDetailsTalentIdDelete(talentId));
         }
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentBioDetailsTalentIdGet([FromRoute][Required]long? talentId)
+        public virtual IActionResult TalentBioDetailsTalentIdGet([FromRoute][Required]string talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(BioDetails));
@@ -123,7 +123,7 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentBioDetailsTalentIdPut([FromRoute][Required]long? talentId)
+        public virtual IActionResult TalentBioDetailsTalentIdPut([FromBody]BioDetails body,[FromRoute][Required]string talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(BioDetails));
@@ -145,7 +145,7 @@ namespace IO.Swagger.Controllers
                         var example = exampleJson != null
                         ? JsonConvert.DeserializeObject<BioDetails>(exampleJson)
                         : default(BioDetails);            //TODO: Change the data returned
-            return new ObjectResult(_iBioDetailsApiController.TalentBioDetailsTalentIdPut(talentId));
+            return new ObjectResult(_iBioDetailsApiController.TalentBioDetailsTalentIdPut(body,talentId));
         }
     }
 }

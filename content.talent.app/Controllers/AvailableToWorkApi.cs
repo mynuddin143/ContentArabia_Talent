@@ -40,7 +40,7 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentAvailableDetailsTalentIdGet([FromRoute][Required]long? talentId)
+        public virtual IActionResult TalentAvailableDetailsTalentIdGet([FromRoute][Required]string talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(TalentRequestDetails));
@@ -83,7 +83,7 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentAvailableDetailsTalentIdPut([FromRoute][Required]long? talentId)
+        public virtual IActionResult TalentAvailableDetailsTalentIdPut([FromRoute][Required]string talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(TalentRequestDetails));

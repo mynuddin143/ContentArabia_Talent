@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Content.Talent.Domain.Interface\Content.Talent.Domain.Interface.csproj" />
+    <ProjectReference Include="..\Content.Talent.DTO\Content.Talent.DTO.csproj" />
     <ProjectReference Include="..\Content.Talent.Persistance\Content.Talent.Persistance.csproj" />
   </ItemGroup>
 

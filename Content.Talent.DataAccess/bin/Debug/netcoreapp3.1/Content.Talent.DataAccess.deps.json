@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Content.Talent.DataAccess/1.0.0": {
         "dependencies": {
+          "Content.Talent.DTO": "1.0.0",
           "Content.Talent.Domain.Interface": "1.0.0",
           "Content.Talent.Persistance": "1.0.0"
         },
@@ -772,6 +773,11 @@
           "Content.Talent.Domain.Model.dll": {}
         }
       },
+      "Content.Talent.DTO/1.0.0": {
+        "runtime": {
+          "Content.Talent.DTO.dll": {}
+        }
+      },
       "Content.Talent.Persistance/1.0.0": {
         "dependencies": {
           "System.Data.SqlClient": "4.8.2"
@@ -1347,6 +1353,11 @@
       "sha512": ""
     },
     "Content.Talent.Domain.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Content.Talent.DTO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

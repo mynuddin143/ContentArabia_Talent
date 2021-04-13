@@ -42,7 +42,7 @@ namespace IO.Swagger.Controllers
         /// <response code="401">Unauthorized. Missing valid authentication credentials for the target resource.</response>
         /// <response code="404">The specified resource was not found.</response>
         /// <response code="405">Invalid input</response>
-        IActionResult TalentClientDetailsTalentIdGet([FromRoute][Required]long? talentId);
+        IActionResult TalentClientDetailsTalentIdGet([FromRoute][Required]string talentId);
 
         /// <summary>
         /// Gets an talent skills item
@@ -54,7 +54,7 @@ namespace IO.Swagger.Controllers
         /// <response code="401">Unauthorized. Missing valid authentication credentials for the target resource.</response>
         /// <response code="404">The specified resource was not found.</response>
         /// <response code="405">Invalid input</response>
-        IActionResult TalentSkillDetailsTalentIdGet([FromRoute][Required]long? talentId);
+        IActionResult TalentSkillDetailsTalentIdGet([FromRoute][Required]string talentId);
 
         /// <summary>
         /// Gets an talent topics item
@@ -66,6 +66,6 @@ namespace IO.Swagger.Controllers
         /// <response code="401">Unauthorized. Missing valid authentication credentials for the target resource.</response>
         /// <response code="404">The specified resource was not found.</response>
         /// <response code="405">Invalid input</response>
-        IActionResult TalentTopicsDetailsTalentIdGet([FromRoute][Required]long? talentId);
+        IActionResult TalentTopicsDetailsTalentIdGet([FromRoute][Required]string talentId);
     }
 }

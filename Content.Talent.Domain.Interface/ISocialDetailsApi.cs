@@ -30,7 +30,7 @@ namespace IO.Swagger.Controllers
         /// <response code="400">Request had bad syntax or was impossible to fulfill.</response>
         /// <response code="401">Unauthorized. Missing valid authentication credentials for the target resource.</response>
         /// <response code="404">The specified resource was not found.</response>
-        IActionResult TalentSocialDetailsTalentIdDelete([FromRoute][Required]long? talentId);
+        IActionResult TalentSocialDetailsTalentIdDelete([FromRoute][Required]string talentId);
 
         /// <summary>
         /// Gets an talent SocialDetails
@@ -42,7 +42,7 @@ namespace IO.Swagger.Controllers
         /// <response code="401">Unauthorized. Missing valid authentication credentials for the target resource.</response>
         /// <response code="404">The specified resource was not found.</response>
         /// <response code="405">Invalid input</response>
-        IActionResult TalentSocialDetailsTalentIdGet([FromRoute][Required]long? talentId);
+        IActionResult TalentSocialDetailsTalentIdGet([FromRoute][Required]string talentId);
 
         /// <summary>
         /// Gets an talent SocialDetails item
@@ -54,6 +54,6 @@ namespace IO.Swagger.Controllers
         /// <response code="401">Unauthorized. Missing valid authentication credentials for the target resource.</response>
         /// <response code="404">The specified resource was not found.</response>
         /// <response code="405">Invalid input</response>
-        IActionResult TalentSocialDetailsTalentIdPut([FromRoute][Required]long? talentId);
+        IActionResult TalentSocialDetailsTalentIdPut([FromBody]SocialDetails body, [FromRoute][Required]string talentId);
     }
 }

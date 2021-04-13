@@ -22,7 +22,13 @@ namespace IO.Swagger.Controllers
     /// </summary>
     [ApiController]
     public class SocialDetailsApiController : ControllerBase
-    { 
+    {
+        private readonly ISocialDetailsApiController _iSocialDetailsApiController;
+        public SocialDetailsApiController(ISocialDetailsApiController iSocialDetailsApiController)
+        {
+
+            _iSocialDetailsApiController = iSocialDetailsApiController;
+        }
         /// <summary>
         /// Remove SocialDetails project
         /// </summary>
@@ -39,8 +45,8 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentSocialDetailsTalentIdDelete([FromRoute][Required]long? talentId)
-        { 
+        public virtual IActionResult TalentSocialDetailsTalentIdDelete([FromRoute][Required]string talentId)
+        {
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200);
 
@@ -53,7 +59,7 @@ namespace IO.Swagger.Controllers
             //TODO: Uncomment the next line to return response 404 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(404, default(Error));
 
-            throw new NotImplementedException();
+            return new ObjectResult(_iSocialDetailsApiController.TalentSocialDetailsTalentIdDelete(talentId));
         }
 
         /// <summary>
@@ -74,7 +80,7 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentSocialDetailsTalentIdGet([FromRoute][Required]long? talentId)
+        public virtual IActionResult TalentSocialDetailsTalentIdGet([FromRoute][Required]string talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(SocialDetails));
@@ -96,7 +102,7 @@ namespace IO.Swagger.Controllers
                         var example = exampleJson != null
                         ? JsonConvert.DeserializeObject<SocialDetails>(exampleJson)
                         : default(SocialDetails);            //TODO: Change the data returned
-            return new ObjectResult(example);
+            return new ObjectResult(_iSocialDetailsApiController.TalentSocialDetailsTalentIdGet(talentId));
         }
 
         /// <summary>
@@ -117,7 +123,7 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentSocialDetailsTalentIdPut([FromRoute][Required]long? talentId)
+        public virtual IActionResult TalentSocialDetailsTalentIdPut([FromBody]SocialDetails body, [FromRoute][Required]string talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(SocialDetails));
@@ -139,7 +145,7 @@ namespace IO.Swagger.Controllers
                         var example = exampleJson != null
                         ? JsonConvert.DeserializeObject<SocialDetails>(exampleJson)
                         : default(SocialDetails);            //TODO: Change the data returned
-            return new ObjectResult(example);
+            return new ObjectResult(_iSocialDetailsApiController.TalentSocialDetailsTalentIdPut(body,talentId));
         }
     }
 }

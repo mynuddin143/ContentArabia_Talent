@@ -83,14 +83,14 @@ namespace IO.Swagger.Controllers
         /// <response code="404">The specified resource was not found.</response>
         /// <response code="405">Invalid input</response>
         [HttpPut]
-        [Route("/talentRegistration")]
+        [Route("/talentRegistration/{talentId}")]
         [ValidateModelState]
         [SwaggerOperation("TalentId")]
         [SwaggerResponse(statusCode: 200, type: typeof(LoginResponse), description: "Success")]
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentId([FromBody]TalentRequestDetails body)
+        public virtual IActionResult TalentId([FromBody]TalentRequestDetails body, [FromRoute][Required]string talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200, default(LoginResponse));
@@ -112,7 +112,7 @@ namespace IO.Swagger.Controllers
                         var example = exampleJson != null
                         ? JsonConvert.DeserializeObject<LoginResponse>(exampleJson)
                         : default(LoginResponse);            //TODO: Change the data returned
-            return new ObjectResult(_iRegistrationApiController.TalentId(body));
+            return new ObjectResult(_iRegistrationApiController.TalentId(body, talentId));
         }
 
         /// <summary>
@@ -131,7 +131,7 @@ namespace IO.Swagger.Controllers
         [SwaggerResponse(statusCode: 400, type: typeof(Error), description: "Request had bad syntax or was impossible to fulfill.")]
         [SwaggerResponse(statusCode: 401, type: typeof(Error), description: "Unauthorized. Missing valid authentication credentials for the target resource.")]
         [SwaggerResponse(statusCode: 404, type: typeof(Error), description: "The specified resource was not found.")]
-        public virtual IActionResult TalentRegistrationTalentIdDelete([FromRoute][Required]long? talentId)
+        public virtual IActionResult TalentRegistrationTalentIdDelete([FromRoute][Required]string talentId)
         { 
             //TODO: Uncomment the next line to return response 200 or use other options such as return this.NotFound(), return this.BadRequest(..), ...
             // return StatusCode(200);

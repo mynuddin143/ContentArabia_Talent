@@ -1091,6 +1091,16 @@
           "bin/placeholder/Content.Talent.Domain.Model.dll": {}
         }
       },
+      "Content.Talent.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Content.Talent.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Content.Talent.DTO.dll": {}
+        }
+      },
       "Content.Talent.Persistance/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -3949,6 +3959,11 @@
       "path": "../Content.Talent.Domain.Model/Content.Talent.Domain.Model.csproj",
       "msbuildProject": "../Content.Talent.Domain.Model/Content.Talent.Domain.Model.csproj"
     },
+    "Content.Talent.DTO/1.0.0": {
+      "type": "project",
+      "path": "../Content.Talent.DTO/Content.Talent.DTO.csproj",
+      "msbuildProject": "../Content.Talent.DTO/Content.Talent.DTO.csproj"
+    },
     "Content.Talent.Persistance/1.0.0": {
       "type": "project",
       "path": "../Content.Talent.Persistance/Content.Talent.Persistance.csproj",
@@ -3957,6 +3972,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Content.Talent.DTO >= 1.0.0",
       "Content.Talent.Domain.Interface >= 1.0.0",
       "Content.Talent.Persistance >= 1.0.0"
     ]
@@ -3999,6 +4015,9 @@
           "projectReferences": {
             "C:\\Users\\mynuddin_shaik\\Documents\\Personal\\ContentArabia\\content-talent\\content.talent.app\\Content.Talent.Domain.Interface\\Content.Talent.Domain.Interface.csproj": {
               "projectPath": "C:\\Users\\mynuddin_shaik\\Documents\\Personal\\ContentArabia\\content-talent\\content.talent.app\\Content.Talent.Domain.Interface\\Content.Talent.Domain.Interface.csproj"
+            },
+            "C:\\Users\\mynuddin_shaik\\Documents\\Personal\\ContentArabia\\content-talent\\content.talent.app\\Content.Talent.DTO\\Content.Talent.DTO.csproj": {
+              "projectPath": "C:\\Users\\mynuddin_shaik\\Documents\\Personal\\ContentArabia\\content-talent\\content.talent.app\\Content.Talent.DTO\\Content.Talent.DTO.csproj"
             },
             "C:\\Users\\mynuddin_shaik\\Documents\\Personal\\ContentArabia\\content-talent\\content.talent.app\\Content.Talent.Persistance\\Content.Talent.Persistance.csproj": {
               "projectPath": "C:\\Users\\mynuddin_shaik\\Documents\\Personal\\ContentArabia\\content-talent\\content.talent.app\\Content.Talent.Persistance\\Content.Talent.Persistance.csproj"
